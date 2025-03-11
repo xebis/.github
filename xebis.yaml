@@ -7,6 +7,12 @@ repositories:
       - github-organization-profile
       - github-profile
       - github-profile-readme
+  - name: github-actions-and-workflows
+    description: A collection of GitHub composite actions and reusable workflows.
+    topics:
+      - github
+      - github-workflows
+      - reusable-workflows
   - name: github-organization-as-code
     description: Manage your GitHub organization's repositories using GitOps principles with a YAML-based configuration, GitHub Actions with reusable workflows, AWS S3 for storage, and GitHub App integration.
     topics:
