@@ -7,6 +7,11 @@ repositories:
       - github-organization-profile
       - github-profile
       - github-profile-readme
+  - name: ansible-collection
+    description: A collection of Ansible roles.
+    topics:
+      - ansible
+      - ansible-collection
   - name: github-actions-and-workflows
     description: A collection of GitHub composite actions and reusable workflows.
     topics:
