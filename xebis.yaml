@@ -39,3 +39,15 @@ repositories:
       - terraform-github
       - terraform-github-provider
       - yaml-configuration
+  - name: infra
+    description: Cloud, lab, and office provisioning and configuration.
+    topics:
+      - ansible
+      - ansible-playbook
+      - cac
+      - computer-config
+      - kubuntu
+      - kubuntu2404
+      - pc
+      - ubuntu
+      - ubuntu2404
