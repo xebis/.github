@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.5.0](https://github.com/xebis/.github/compare/v0.4.0...v0.5.0) (2025-03-23)
+
+### Features
+
+* add infra repository ([adf19fc](https://github.com/xebis/.github/commit/adf19fcec584a0f02f62be58e25fabd66c2f3519))
+
 ## [0.4.0](https://github.com/xebis/.github/compare/v0.3.0...v0.4.0) (2025-03-22)
 
 ### Features
