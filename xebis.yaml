@@ -39,6 +39,18 @@ repositories:
       - terraform-github
       - terraform-github-provider
       - yaml-configuration
+  - name: hetzner-iac-cac
+    description: GitOps-driven repo for provisioning Hetzner Cloud using Terraform and configuring it with Ansible.
+    topics:
+      - ansible
+      - cac
+      - iac
+      - github
+      - github-workflows
+      - gitops
+      - hetzner
+      - hetzner-cloud
+      - terraform
   - name: infra
     description: Cloud, lab, and office provisioning and configuration.
     topics:
