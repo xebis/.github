@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.6.0](https://github.com/xebis/.github/compare/v0.5.0...v0.6.0) (2025-04-12)
+
+### Features
+
+* add hetzner-iac-cac repository ([5dacaaa](https://github.com/xebis/.github/commit/5dacaaa89ff96fb8a510fc74f55e5b3a4aaf02a3))
+
 ## [0.5.0](https://github.com/xebis/.github/compare/v0.4.0...v0.5.0) (2025-03-23)
 
 ### Features
