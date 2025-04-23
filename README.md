@@ -1,5 +1,7 @@
 # GitHub Organization
 
+Xebis organization profile and management.
+
 ## Features
 
 - [Xebis GitHub Organization Profile Readme](profile/README.md)
