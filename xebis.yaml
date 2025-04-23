@@ -13,10 +13,18 @@ repositories:
       - github-profile
       - github-profile-readme
   - name: ansible-collection
-    description: A collection of Ansible roles.
+    description: This Ansible collection provides a set of roles designed for configuring Kubuntu desktop and Ubuntu server environments.
     topics:
       - ansible
       - ansible-collection
+      - cac
+      - computer-config
+      - kubuntu
+      - kubuntu2404
+      - pc
+      - ubuntu
+      - ubuntu2404
+      - apt
   - name: github-actions-and-workflows
     description: A collection of GitHub composite actions and reusable workflows.
     topics:
