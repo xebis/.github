@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.7.0](https://github.com/xebis/.github/compare/v0.6.0...v0.7.0) (2025-04-24)
+
+### Features
+
+* align xebis ansible collection and .github descriptions ([bfd1520](https://github.com/xebis/.github/commit/bfd1520049c207e7e0fd2c9fc08255dd8b634af9))
+
 ## [0.6.0](https://github.com/xebis/.github/compare/v0.5.0...v0.6.0) (2025-04-12)
 
 ### Features
