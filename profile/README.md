@@ -18,3 +18,6 @@ Xebis is an unincorporated **software engineering group** dedicated to productiv
 
 [xebis/hetzner-iac-cac](https://github.com/xebis/hetzner-iac-cac)
   : GitOps-driven repo for provisioning Hetzner Cloud using Terraform and configuring it with Ansible.
+
+[xebis/infra](https://github.com/xebis/infra)
+  : Cloud, lab, and office provisioning and configuration.
