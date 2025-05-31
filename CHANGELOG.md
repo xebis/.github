@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.8.0](https://github.com/xebis/.github/compare/v0.7.0...v0.8.0) (2025-05-31)
+
+### Features
+
+* **profile:** add xebis/infra repository ([c2d6a4e](https://github.com/xebis/.github/commit/c2d6a4eadb4df731f67fd988a5b45d037217665f))
+
 ## [0.7.0](https://github.com/xebis/.github/compare/v0.6.0...v0.7.0) (2025-04-24)
 
 ### Features
