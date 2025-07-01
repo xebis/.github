@@ -2,6 +2,12 @@
 
 Xebis is an unincorporated **software engineering group** dedicated to productivity, automation, and software engineering.
 
+Our **vision** is to allow people and organizations to be productive, innovative, and efficient as they grow.
+
+Our **mission** is to give access to ready-to-use and inspirational tools for IT, software development, and beyond, for both organizations and households.
+
+We **value** knowledge, automation, agility, and continuous improvement.
+
 ## Repositories
 
 [xebis/.github](https://github.com/xebis/.github)
