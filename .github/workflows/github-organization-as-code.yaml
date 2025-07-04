@@ -9,7 +9,7 @@ on:
 
 jobs:
   call-terraform:
-    uses: xebis/github-organization-as-code/.github/workflows/terraform.yaml@v0.11.0
+    uses: xebis/github-organization-as-code/.github/workflows/terraform.yaml@v0.12.1
     with:
       aws_region: ${{ vars.AWS_REGION }}
       aws_endpoint_url_s3: ${{ vars.AWS_ENDPOINT_URL_S3 }}
