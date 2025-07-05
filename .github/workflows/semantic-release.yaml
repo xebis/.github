@@ -9,5 +9,7 @@ on:
 jobs:
   call-reusable-release:
     uses: xebis/github-actions-and-workflows/.github/workflows/semantic-release.yaml@main
+    with:
+      GH_APP_ID: ${{ vars.GH_APP_SEM_REL_ID }}
     secrets:
-      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      GH_APP_PEM_FILE: ${{ secrets.GH_APP_SEM_REL_PEM_FILE }}
