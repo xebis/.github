@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.9.0](https://github.com/xebis/.github/compare/v0.8.0...v0.9.0) (2025-07-06)
+
+### Features
+
+* add main branch all-repository ruleset ([ee1c579](https://github.com/xebis/.github/commit/ee1c57983e2fc56b8e281cfb886b32077f9d5ce8))
+* add semantic release gh app bypass ([d5cfb71](https://github.com/xebis/.github/commit/d5cfb71cfe1a6e1227b873ade5f54e100d157fc1))
+
+### Bug Fixes
+
+* main branch ruleset shouldn't prevent pull request merges ([56aa385](https://github.com/xebis/.github/commit/56aa385d011df15ee3ae43323843f8a8a23afa42))
+* semantic release fails on main branch ruleset ([8b5de51](https://github.com/xebis/.github/commit/8b5de5194d5f201e0c54fae5afaad43d18b13f10))
+
 ## [0.8.0](https://github.com/xebis/.github/compare/v0.7.0...v0.8.0) (2025-05-31)
 
 ### Features
