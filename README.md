@@ -1,4 +1,4 @@
-# GitHub Organization
+# Xebis GitHub Organization
 
 Xebis organization profile and management.
 
