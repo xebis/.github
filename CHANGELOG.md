@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.9.1](https://github.com/xebis/.github/compare/v0.9.0...v0.9.1) (2025-09-26)
+
+### Bug Fixes
+
+* configuration prevents creating main branch in an empty repository ([f6a99f4](https://github.com/xebis/.github/commit/f6a99f476510ca3f4edecb340002cc558eba9a49))
+
 ## [0.9.0](https://github.com/xebis/.github/compare/v0.8.0...v0.9.0) (2025-07-06)
 
 ### Features
