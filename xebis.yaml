@@ -22,7 +22,6 @@ organization:
             include:
               - ~DEFAULT_BRANCH
         rules:
-          creation: true
           deletion: true
           pull_request:
             required_approving_review_count: 0
