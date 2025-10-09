@@ -1,4 +1,4 @@
 ---
 copy:
-- .github/workflows/semantic-release.yaml
-- .releaserc.yaml
+  - examples/workflows/semantic-release.yaml:.github/workflows/semantic-release.yaml
+  - .releaserc.yaml
