@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.10.0](https://github.com/xebis/.github/compare/v0.9.1...v0.10.0) (2025-10-09)
+
+### Features
+
+* sync reuse semantic release workflow instead of copying it ([9e0a04b](https://github.com/xebis/.github/commit/9e0a04b87d55de66a1952ab70dc57a692705736a))
+
 ## [0.9.1](https://github.com/xebis/.github/compare/v0.9.0...v0.9.1) (2025-09-26)
 
 ### Bug Fixes
