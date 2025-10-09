@@ -5,12 +5,62 @@ on:
   push:
     branches:
       - main
+  workflow_call:
+    inputs:
+      GH_APP_ID:
+        type: string
+        required: false
+    secrets:
+      GH_TOKEN:
+        required: false
+      GH_APP_PEM_FILE:
+        required: false
 
 jobs:
   release:
     name: Release
-    uses: xebis/github-actions-and-workflows/.github/workflows/semantic-release.yaml@v0
-    with:
-      GH_APP_ID: ${{ vars.GH_APP_SEM_REL_ID }}
-    secrets:
-      GH_APP_PEM_FILE: ${{ secrets.GH_APP_SEM_REL_PEM_FILE }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # to be able to publish a GitHub release
+      issues: write # to be able to comment on released issues
+      pull-requests: write # to be able to comment on released pull requests
+    env:
+      USE_GH_APP: ${{ inputs.GH_APP_ID && secrets.GH_APP_PEM_FILE || vars.GH_APP_SEM_REL_ID && secrets.GH_APP_SEM_REL_PEM_FILE }}
+
+    steps:
+      - name: Create GitHub App token
+        uses: actions/create-github-app-token@v2
+        id: gh-app-token
+        if: env.USE_GH_APP
+        with:
+          app-id: ${{ inputs.GH_APP_ID || vars.GH_APP_SEM_REL_ID }}
+          private-key: ${{ secrets.GH_APP_PEM_FILE || secrets.GH_APP_SEM_REL_PEM_FILE }}
+
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ steps.gh-app-token.outputs.token || secrets.GH_TOKEN || secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "lts/*"
+
+      - name: Install Semantic Release
+        run: >
+          npm install
+          semantic-release
+          conventional-changelog-conventionalcommits
+          @semantic-release/changelog
+          @semantic-release/exec
+          @semantic-release/git
+          semantic-release-major-tag
+
+      - name: Verify the integrity of provenance attestations and registry signatures for installed dependencies
+        run: npm audit signatures
+
+      - name: Run Semantic Release
+        env:
+          GITHUB_TOKEN: ${{ steps.gh-app-token.outputs.token || secrets.GH_TOKEN || secrets.GITHUB_TOKEN }}
+        run: npx semantic-release
